@@ -1,5 +1,5 @@
 module pyth::set_update_fee {
-    use sui::math::{Self};
+    use iota::math::{Self};
 
     use wormhole::cursor;
 
@@ -40,8 +40,8 @@ module pyth::set_update_fee {
 
 #[test_only]
 module pyth::set_update_fee_tests {
-    use sui::test_scenario::{Self};
-    use sui::coin::Self;
+    use iota::test_scenario::{Self};
+    use iota::coin::Self;
 
     use pyth::pyth_tests::{Self, setup_test, take_wormhole_and_pyth_states};
     use pyth::state::Self;
