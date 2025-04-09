@@ -1,17 +1,15 @@
 [package]
 name = "Pyth"
 version = "0.0.2"
-published-at = "0xabf837e98c26087cba0883c0a7a28326b1fa3c5e1e2c5abdb486f9e8f594c837"
+published-at = "0x23994dd119480ea614f7623520337058dca913cb1bb6e5d8d51c7b067d3ca3bb"
 
-[dependencies.Sui]
-git = "https://github.com/MystenLabs/sui.git"
-subdir = "crates/sui-framework/packages/sui-framework"
-rev = "041c5f2bae2fe52079e44b70514333532d69f4e6"
+[dependencies.Iota]
+git = "https://github.com/iotaledger/iota.git"
+subdir = "crates/iota-framework/packages/iota-framework"
+rev = "751c23caf24efd071463b9ffd07eabcb15f44f31"
 
 [dependencies.Wormhole]
-git = "https://github.com/wormhole-foundation/wormhole.git"
-subdir = "sui/wormhole"
-rev = "sui-upgrade-testnet"
+local = "../vendor/wormhole_testnet/wormhole"
 
 [addresses]
-pyth = "0xabf837e98c26087cba0883c0a7a28326b1fa3c5e1e2c5abdb486f9e8f594c837"
+pyth = "0x23994dd119480ea614f7623520337058dca913cb1bb6e5d8d51c7b067d3ca3bb"

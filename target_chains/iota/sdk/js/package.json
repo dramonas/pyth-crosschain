@@ -14,14 +14,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/pyth-network/pyth-crosschain",
-    "directory": "target_chains/sui/sdk/js-iota"
+    "directory": "target_chains/iota/sdk/js"
   },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build": "tsc",
-    "example-relay": "pnpm run build && node lib/examples/SuiRelay.js",
+    "example-relay": "pnpm run build && node lib/examples/IotaRelay.js",
     "test:lint": "eslint src/",
     "test:format": "prettier --check \"src/**/*.ts\"",
     "fix:lint": "eslint --fix src/",
@@ -54,7 +54,7 @@
     "yargs": "^17.0.20"
   },
   "dependencies": {
-    "@iota/iota-sdk": "^0.5.0",
+    "@iota/iota-sdk": "^0.6.0",
     "@pythnetwork/price-service-client": "workspace:*",
     "buffer": "^6.0.3"
   }

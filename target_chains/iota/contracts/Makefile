@@ -2,8 +2,8 @@ TARGETS := test
 
 .PHONY: test
 test:
-	sui move test
+	iota move test
 
 .PHONY: build
 build:
-	sui move build -d
+	iota move build -d

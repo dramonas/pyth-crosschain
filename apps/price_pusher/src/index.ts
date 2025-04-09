@@ -9,6 +9,7 @@ import near from "./near/command";
 import solana from "./solana/command";
 import fuel from "./fuel/command";
 import ton from "./ton/command";
+import iota from "./iota/command";
 import { enableMetrics, metricsPort } from "./options";
 
 yargs(hideBin(process.argv))
@@ -22,6 +23,7 @@ yargs(hideBin(process.argv))
   .command(evm)
   .command(fuel)
   .command(injective)
+  .command(iota)
   .command(aptos)
   .command(sui)
   .command(near)
